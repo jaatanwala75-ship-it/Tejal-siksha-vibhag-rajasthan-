@@ -204,41 +204,41 @@ const Index = () => {
     "@graph": [
       {
         "@type": "WebSite",
-        "@id": "https://sarkarisewayojan.com/#website",
-        "url": "https://sarkarisewayojan.com/",
+        "@id": "https://tejalsikshavibhag.com/#website",
+        "url": "https://tejalsikshavibhag.com/",
         "name": "Sarkari Sewayojan",
         "alternateName": [
-          "SarkariSewayojan",
+          "TejalSikshaVibhag",
           "Sarkari Sewayojan Official",
           "Sarkari Sewayojan Portal",
-          "SarkariSewayojan Portal"
+          "Tejal Siksha Vibhag Portal"
         ],
         "publisher": {
-          "@id": "https://sarkarisewayojan.com/#organization"
+          "@id": "https://tejalsikshavibhag.com/#organization"
         },
         "potentialAction": {
           "@type": "SearchAction",
-          "target": "https://sarkarisewayojan.com/?search={search_term_string}",
+          "target": "https://tejalsikshavibhag.com/?search={search_term_string}",
           "query-input": "required name=search_term_string"
         }
       },
       {
         "@type": "Organization",
-        "@id": "https://sarkarisewayojan.com/#organization",
+        "@id": "https://tejalsikshavibhag.com/#organization",
         "name": "Sarkari Sewayojan",
         "alternateName": [
-          "SarkariSewayojan",
+          "TejalSikshaVibhag",
           "Sarkari Sewayojan Team"
         ],
-        "url": "https://sarkarisewayojan.com/",
+        "url": "https://tejalsikshavibhag.com/",
         "logo": {
           "@type": "ImageObject",
-          "@id": "https://sarkarisewayojan.com/#logo",
-          "url": settings.logo_url || "https://sarkarisewayojan.com/logo_icon.png",
+          "@id": "https://tejalsikshavibhag.com/#logo",
+          "url": settings.logo_url || "https://tejalsikshavibhag.com/logo_icon.png",
           "caption": "Sarkari Sewayojan"
         },
         "image": {
-          "@id": "https://sarkarisewayojan.com/#logo"
+          "@id": "https://tejalsikshavibhag.com/#logo"
         }
       }
     ]
@@ -258,7 +258,7 @@ const Index = () => {
         title={pageTitle}
         description={pageDescription}
         schema={schema}
-        url="https://sarkarisewayojan.com/"
+        url="https://tejalsikshavibhag.com/"
       />
       <Sidebar isOpen={sidebarOpen} onToggle={() => setSidebarOpen(!sidebarOpen)} onFilter={handleFilter} />
       <SiteHeader logoUrl={settings.logo_url} />

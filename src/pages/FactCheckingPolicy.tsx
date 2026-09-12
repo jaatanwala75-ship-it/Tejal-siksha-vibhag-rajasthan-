@@ -22,7 +22,7 @@ const factCheckingPolicy: PolicyContent = {
     {
       heading: 'Overview',
       paragraphs: [
-        'At Sarkari Sewayojan, maintaining accuracy, reliability, and transparency is one of our highest priorities. We are committed to providing users with trustworthy information related to government jobs, admit cards, results, admissions, answer keys, government schemes, and other educational updates.',
+        'At Tejal Siksha Vibhag, maintaining accuracy, reliability, and transparency is one of our highest priorities. We are committed to providing users with trustworthy information related to government jobs, admit cards, results, admissions, answer keys, government schemes, and other educational updates.',
       ],
     },
     {
@@ -37,7 +37,7 @@ const factCheckingPolicy: PolicyContent = {
     {
       heading: 'Editorial Review',
       paragraphs: [
-        'All content published on Sarkari Sewayojan goes through an editorial review process before publication. Our team aims to ensure that the information is presented clearly, accurately, and in a user-friendly format.',
+        'All content published on Tejal Siksha Vibhag goes through an editorial review process before publication. Our team aims to ensure that the information is presented clearly, accurately, and in a user-friendly format.',
       ],
     },
     {
@@ -51,13 +51,13 @@ const factCheckingPolicy: PolicyContent = {
       heading: 'User Feedback',
       paragraphs: [
         'We value feedback from our users. If you notice any factual error, outdated information, or misleading content on our website, you may contact us through our official support email.',
-        '<strong>Support Email:</strong><br/>Helpdesk@sarkarisewayojan.com',
+        '<strong>Support Email:</strong><br/>contact@tejalsikshavibhag.com',
       ],
     },
     {
       heading: 'Transparency Commitment',
       paragraphs: [
-        'Sarkari Sewayojan is an independent informational platform. We do not represent any government authority or organization. Our objective is to simplify official information and make it easily accessible for users in a clear and understandable manner.',
+        'Tejal Siksha Vibhag is an independent informational platform. We do not represent any government authority or organization. Our objective is to simplify official information and make it easily accessible for users in a clear and understandable manner.',
       ],
     },
   ],

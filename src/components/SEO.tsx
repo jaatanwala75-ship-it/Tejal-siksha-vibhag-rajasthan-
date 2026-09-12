@@ -16,7 +16,7 @@ export default function SEO({ title, description, keywords, schema, url, image, 
   const defaultKeywords = "sarkari sewayojan, sarkari result, sarkari exam, rojgar result, sarkari csc, find jobs, sewayojan, sewayojan up, government jobs, new vacancy, free job alert, sarkari result 2026, sarkari exam 2026, freejobalert, latest government jobs, upsssc, ssc, bank jobs, railway jobs, police jobs, defence jobs, teaching jobs, admit card, result, syllabus, online form, सरकारी रिजल्ट, सरकारी एग्जाम, रोजगार रिजल्ट, सेवायोजन, यूपी सेवायोजन, सरकारी नौकरी, नई वैकेंसी, लेटेस्ट सरकारी जॉब्स";
   
   // Ensure the image URL is fully qualified with the absolute domain for social media crawlers
-  const defaultImage = "https://sarkarisewayojan.com/logo_icon.png";
+  const defaultImage = "https://tejalsikshavibhag.com/logo_icon.png";
   let primaryImage = defaultImage;
   let screenshotImage = "";
 
@@ -24,11 +24,11 @@ export default function SEO({ title, description, keywords, schema, url, image, 
     if (image.startsWith('http')) {
       primaryImage = image;
     } else {
-      primaryImage = `https://sarkarisewayojan.com${image.startsWith('/') ? '' : '/'}${image}`;
+      primaryImage = `https://tejalsikshavibhag.com${image.startsWith('/') ? '' : '/'}${image}`;
     }
   } else if (url) {
     // Dynamically generate a high-speed, direct PNG screenshot (1200x800) of the exact page using Thum.io CDN engine
-    const targetUrl = url.startsWith('http') ? url : `https://sarkarisewayojan.com${url.startsWith('/') ? '' : '/'}${url}`;
+    const targetUrl = url.startsWith('http') ? url : `https://tejalsikshavibhag.com${url.startsWith('/') ? '' : '/'}${url}`;
     screenshotImage = `https://image.thum.io/get/width/1200/crop/800/noanimate/${targetUrl}`;
     primaryImage = screenshotImage;
   }

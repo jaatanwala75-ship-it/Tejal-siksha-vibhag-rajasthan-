@@ -16,11 +16,11 @@ export interface FcmNotificationPayload {
 const LOCAL_STORAGE_KEY = 'pending_fcm_notifications_queue';
 
 export function ensureFullUrl(url?: string): string {
-  if (!url) return 'https://sarkarisewayojan.com';
+  if (!url) return 'https://tejalsikshavibhag.com';
   if (url.startsWith('http://') || url.startsWith('https://')) {
     return url;
   }
-  let origin = 'https://sarkarisewayojan.com';
+  let origin = 'https://tejalsikshavibhag.com';
   if (typeof window !== 'undefined' && window.location && window.location.origin) {
     if (!window.location.origin.includes('localhost') && window.location.origin !== 'null') {
       origin = window.location.origin;

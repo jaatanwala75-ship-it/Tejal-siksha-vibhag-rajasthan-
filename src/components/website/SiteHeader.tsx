@@ -38,7 +38,7 @@ const SiteHeader = ({ logoUrl }: SiteHeaderProps) => {
       <div className="absolute left-[52px] top-0 bottom-0 h-full flex items-center justify-center">
         <img 
           src={logoUrl || defaultLogo} 
-          alt="Sarkari Sewayojan Logo" 
+          alt="Tejal Siksha Vibhag Logo" 
           className="h-full w-auto object-contain cursor-pointer"
           referrerPolicy="no-referrer"
           onClick={() => window.open(window.location.origin, '_blank')}
@@ -53,7 +53,7 @@ const SiteHeader = ({ logoUrl }: SiteHeaderProps) => {
             onClick={() => window.open(window.location.origin, '_blank')}
             className="cursor-pointer inline-block"
           >
-            Sarkari Sewayojan
+            Tejal Siksha Vibhag
           </span>
         </h1>
         <div className="text-3xl text-primary mt-1 font-medium max-sm:text-[16px] sm:max-md:text-xl">
@@ -61,11 +61,11 @@ const SiteHeader = ({ logoUrl }: SiteHeaderProps) => {
             onClick={() => window.open(window.location.origin, '_blank')}
             className="cursor-pointer inline-block"
           >
-            www.sarkarisewayojan.com
+            Tejal Siksha Vibhag Rajasthan
           </span>
         </div>
         <div className="text-[10px] text-accent mt-1.5 tracking-[3px] max-sm:tracking-[1px] font-medium max-sm:text-[9px]">
-          LATEST GOVERNMENT JOBS, RESULTS & NOTIFICATIONS
+          ALL GOVERNMENT JOBS IN ONE PLACE
         </div>
       </div>
 

@@ -15,7 +15,7 @@ export interface VaultBackup {
   };
 }
 
-const DB_NAME = 'SarkariSewayojanVaultDB';
+const DB_NAME = 'TejalSikshaVibhagVaultDB';
 const STORE_NAME = 'backups';
 const DB_VERSION = 1;
 

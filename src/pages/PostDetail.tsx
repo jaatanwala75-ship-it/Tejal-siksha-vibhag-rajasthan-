@@ -436,7 +436,7 @@ const PostDetail = () => {
   const postCategory = getPostCategoryName();
   const postDescription = generateDynamicDescription(post, postCategory);
   
-  const postUrl = post ? `https://sarkarisewayojan.com/post/${post.slug || post.id}` : '';
+  const postUrl = post ? `https://tejalsikshavibhag.com/post/${post.slug || post.id}` : '';
 
   const schema = post ? {
     "@context": "https://schema.org",
@@ -449,13 +449,13 @@ const PostDetail = () => {
             "@type": "ListItem",
             "position": 1,
             "name": "Home",
-            "item": "https://sarkarisewayojan.com/"
+            "item": "https://tejalsikshavibhag.com/"
           },
           ...(postCategory ? [{
             "@type": "ListItem",
             "position": 2,
             "name": postCategory,
-            "item": `https://sarkarisewayojan.com/category/${encodeURIComponent(postCategory)}`
+            "item": `https://tejalsikshavibhag.com/category/${encodeURIComponent(postCategory)}`
           }] : []),
           {
             "@type": "ListItem",
@@ -476,8 +476,8 @@ const PostDetail = () => {
         "hiringOrganization": {
           "@type": "Organization",
           "name": "Sarkari Sewayojan",
-          "sameAs": "https://sarkarisewayojan.com",
-          "logo": "https://sarkarisewayojan.com/logo_icon.png"
+          "sameAs": "https://tejalsikshavibhag.com",
+          "logo": "https://tejalsikshavibhag.com/logo_icon.png"
         },
         "jobLocation": {
           "@type": "Place",
@@ -498,10 +498,10 @@ const PostDetail = () => {
         "publisher": {
           "@type": "Organization",
           "name": "Sarkari Sewayojan",
-          "url": "https://sarkarisewayojan.com/",
+          "url": "https://tejalsikshavibhag.com/",
           "logo": {
             "@type": "ImageObject",
-            "url": "https://sarkarisewayojan.com/logo_icon.png"
+            "url": "https://tejalsikshavibhag.com/logo_icon.png"
           }
         }
       }
@@ -516,7 +516,7 @@ const PostDetail = () => {
           description={postDescription}
           keywords={`${postTitle}, ${postTitle} online form, ${postTitle} recruitment, sarkari result, sarkari exam, rojgar result, sewayojan`}
           schema={schema}
-          url={`https://sarkarisewayojan.com/post/${post.slug || post.id}`}
+          url={`https://tejalsikshavibhag.com/post/${post.slug || post.id}`}
           image={post.media_urls?.[0] || post.banner_url || undefined}
         />
       )}

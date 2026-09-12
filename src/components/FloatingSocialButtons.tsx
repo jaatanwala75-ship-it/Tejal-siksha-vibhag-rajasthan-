@@ -54,7 +54,7 @@ const getInitialSocialLinks = (): Record<string, { url: string; enabled: boolean
     // Default fallback: enable whatsapp & youtube if no explicit setting in SSG
     const hasSetting = rawEnabled !== undefined && rawEnabled !== null && rawEnabled !== '';
     const enabled = hasSetting ? (rawEnabled === 'true' || rawEnabled === '1') : (network === 'whatsapp' || network === 'youtube' || network === 'telegram');
-    const finalUrl = url || (network === 'whatsapp' ? 'https://whatsapp.com/channel/0029Vb7mSRl6xCSTsZCzb60Y' : network === 'youtube' ? 'https://www.youtube.com/@sarkarisewayojan' : network === 'telegram' ? 'https://t.me/sarkarisewayojan' : '');
+    const finalUrl = url || (network === 'whatsapp' ? 'https://whatsapp.com/channel/0029Vb7mSRl6xCSTsZCzb60Y' : network === 'youtube' ? 'https://www.youtube.com/@tejalsikshavibhag' : network === 'telegram' ? 'https://t.me/tejalsikshavibhag' : '');
 
     if (finalUrl && enabled) {
       compiledLinks[network] = { url: finalUrl, enabled: true };
@@ -102,7 +102,7 @@ export default function FloatingSocialButtons() {
         const rawEnabled = settingsData[`social_${network}_enabled`];
         const hasSetting = rawEnabled !== undefined && rawEnabled !== null && rawEnabled !== '';
         const enabled = hasSetting ? (rawEnabled === 'true' || rawEnabled === '1') : (network === 'whatsapp' || network === 'youtube' || network === 'telegram');
-        const finalUrl = url || (network === 'whatsapp' ? 'https://whatsapp.com/channel/0029Vb7mSRl6xCSTsZCzb60Y' : network === 'youtube' ? 'https://www.youtube.com/@sarkarisewayojan' : network === 'telegram' ? 'https://t.me/sarkarisewayojan' : '');
+        const finalUrl = url || (network === 'whatsapp' ? 'https://whatsapp.com/channel/0029Vb7mSRl6xCSTsZCzb60Y' : network === 'youtube' ? 'https://www.youtube.com/@tejalsikshavibhag' : network === 'telegram' ? 'https://t.me/tejalsikshavibhag' : '');
 
         if (finalUrl && enabled) {
           compiledLinks[network] = { url: finalUrl, enabled: true };

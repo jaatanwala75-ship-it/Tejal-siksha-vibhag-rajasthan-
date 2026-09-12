@@ -181,20 +181,20 @@ const CategoryMore = () => {
             "@type": "ListItem",
             "position": 1,
             "name": "Home",
-            "item": "https://sarkarisewayojan.com/"
+            "item": "https://tejalsikshavibhag.com/"
           },
           {
             "@type": "ListItem",
             "position": 2,
             "name": categoryName,
-            "item": `https://sarkarisewayojan.com/category/${encodeURIComponent(categoryName)}`
+            "item": `https://tejalsikshavibhag.com/category/${encodeURIComponent(categoryName)}`
           }
         ]
       },
       {
         "@type": "CollectionPage",
         "name": `${categoryName} - Sarkari Result | Sarkari Sewayojan`,
-        "url": `https://sarkarisewayojan.com/category/${encodeURIComponent(categoryName)}`,
+        "url": `https://tejalsikshavibhag.com/category/${encodeURIComponent(categoryName)}`,
         "description": `All latest updates, online forms, and Sarkari Result keys for ${categoryName} on Sarkari Sewayojan.`
       }
     ]
@@ -206,7 +206,7 @@ const CategoryMore = () => {
         title={`${categoryName} - Sarkari Result | Sarkari Sewayojan`}
         description={`All latest updates, online forms, and Sarkari Result keys for ${categoryName} on Sarkari Sewayojan.`}
         keywords={`${categoryName}, ${categoryName} online form, ${categoryName} result, ${categoryName} admit card, sarkari result, sarkari exam, rojgar result, sewayojan`}
-        url={`https://sarkarisewayojan.com/category/${encodeURIComponent(categoryName)}`}
+        url={`https://tejalsikshavibhag.com/category/${encodeURIComponent(categoryName)}`}
         schema={categorySchema}
       />
       <Sidebar isOpen={sidebarOpen} onToggle={() => setSidebarOpen(!sidebarOpen)} onFilter={handleFilter} />

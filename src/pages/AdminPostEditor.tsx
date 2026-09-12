@@ -927,7 +927,7 @@ const AdminPostEditor = () => {
   </style>
 </head>
 <body>
-<div class="header"><h1>SARKARI SEWAYOJAN</h1></div>
+<div class="header"><h1>TEJAL SIKSHA VIBHAG</h1></div>
 <div class="main-wrapper">
   <div class="job-detail-box">
     <table class="post-summary-table" style="width:100%; border-collapse:collapse; margin-bottom: 20px;">

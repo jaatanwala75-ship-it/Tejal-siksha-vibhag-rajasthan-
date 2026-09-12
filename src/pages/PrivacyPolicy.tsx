@@ -31,13 +31,13 @@ const languages: LangOption[] = [
 ];
 
 const englishPolicy: PolicyContent = {
-  title: 'Privacy Policy – Sarkari Sewayojan',
+  title: 'Privacy Policy – Tejal Siksha Vibhag',
   sections: [
     {
       heading: 'Introduction',
       paragraphs: [
-        'Welcome to Sarkari Sewayojan. Protecting the privacy of our visitors is one of our top priorities. This Privacy Policy document explains the types of information that are collected and recorded by Sarkari Sewayojan and how we use it.',
-        'Sarkari Sewayojan is an informational website that provides updates related to government jobs, admit cards, results, admissions, answer keys, and other educational notifications. The information provided on this website is for informational purposes only.',
+        'Welcome to Tejal Siksha Vibhag. Protecting the privacy of our visitors is one of our top priorities. This Privacy Policy document explains the types of information that are collected and recorded by Tejal Siksha Vibhag and how we use it.',
+        'Tejal Siksha Vibhag is an informational website that provides updates related to government jobs, admit cards, results, admissions, answer keys, and other educational notifications. The information provided on this website is for informational purposes only.',
         'By accessing and using our website, you agree to the terms described in this Privacy Policy.',
       ],
     },
@@ -63,7 +63,7 @@ const englishPolicy: PolicyContent = {
     {
       heading: 'Log Files',
       paragraphs: [
-        'Sarkari Sewayojan follows a standard procedure of using log files. These files log visitors when they visit websites.',
+        'Tejal Siksha Vibhag follows a standard procedure of using log files. These files log visitors when they visit websites.',
         'The information collected by log files may include:',
         'This information is used for analyzing trends, administering the website, tracking user movement on the website, and gathering demographic information.',
       ],
@@ -79,7 +79,7 @@ const englishPolicy: PolicyContent = {
     {
       heading: 'Cookies and Web Beacons',
       paragraphs: [
-        'Like many other websites, Sarkari Sewayojan uses cookies to store information about visitors preferences and the pages they accessed on the website.',
+        'Like many other websites, Tejal Siksha Vibhag uses cookies to store information about visitors preferences and the pages they accessed on the website.',
         'Cookies help us:',
         'Users can choose to disable cookies through their browser settings if they prefer.',
       ],
@@ -101,14 +101,14 @@ const englishPolicy: PolicyContent = {
         'https://adssettings.google.com',
         'For more information about how Google uses data from sites that use its services, please visit:',
         'https://policies.google.com/technologies/ads',
-        'Please note that Sarkari Sewayojan has no access to or control over cookies used by third-party advertisers.',
+        'Please note that Tejal Siksha Vibhag has no access to or control over cookies used by third-party advertisers.',
       ],
       bullets: ['Cookies', 'Web Beacons', 'JavaScript'],
     },
     {
       heading: 'Third-Party Privacy Policies',
       paragraphs: [
-        "Sarkari Sewayojan's Privacy Policy does not apply to other advertisers or websites.",
+        "Tejal Siksha Vibhag's Privacy Policy does not apply to other advertisers or websites.",
         'Our website may contain links to external websites such as official government portals or other informational resources. Once you leave our website, we are not responsible for the privacy practices or policies of those external websites.',
         'We recommend that users review the privacy policies of those third-party websites separately.',
       ],
@@ -129,7 +129,7 @@ const englishPolicy: PolicyContent = {
       heading: "Children's Information",
       paragraphs: [
         'Protecting children while using the internet is important to us.',
-        'Sarkari Sewayojan does not knowingly collect any personal identifiable information from children under the age of 13.',
+        'Tejal Siksha Vibhag does not knowingly collect any personal identifiable information from children under the age of 13.',
         'If you believe that your child has provided personal information on our website, please contact us immediately and we will take necessary steps to remove such information from our records.',
       ],
     },
@@ -150,7 +150,7 @@ const englishPolicy: PolicyContent = {
     {
       heading: 'Online Privacy Policy Only',
       paragraphs: [
-        'This Privacy Policy applies only to our online activities and is valid for visitors to our website regarding the information they share and/or that is collected on Sarkari Sewayojan.',
+        'This Privacy Policy applies only to our online activities and is valid for visitors to our website regarding the information they share and/or that is collected on Tejal Siksha Vibhag.',
         'This policy does not apply to information collected offline or through channels other than this website.',
       ],
     },
@@ -164,28 +164,28 @@ const englishPolicy: PolicyContent = {
     {
       heading: 'Consent',
       paragraphs: [
-        'By using our website Sarkari Sewayojan, you hereby consent to our Privacy Policy and agree to its terms.',
+        'By using our website Tejal Siksha Vibhag, you hereby consent to our Privacy Policy and agree to its terms.',
       ],
     },
     {
       heading: 'Contact Information',
       paragraphs: [
         'If you have any questions or concerns about this Privacy Policy or our website practices, you may contact us at:',
-        'Website: Sarkari Sewayojan',
-        'Email: Helpdesk@sarkarisewayojan.com',
+        'Website: Tejal Siksha Vibhag',
+        'Email: contact@tejalsikshavibhag.com',
       ],
     },
   ],
 };
 
 const hindiPolicy: PolicyContent = {
-  title: 'गोपनीयता नीति – सरकारी सेवायोजन',
+  title: 'गोपनीयता नीति – तेजल शिक्षा विभाग',
   sections: [
     {
       heading: 'परिचय',
       paragraphs: [
-        'सरकारी सेवायोजन में आपका स्वागत है। हमारे आगंतुकों की गोपनीयता की सुरक्षा हमारी सर्वोच्च प्राथमिकताओं में से एक है। यह गोपनीयता नीति बताती है कि सरकारी सेवायोजन द्वारा कौन-कौन सी जानकारी एकत्र और रिकॉर्ड की जाती है तथा उसका उपयोग कैसे किया जाता है।',
-        'सरकारी सेवायोजन एक सूचनात्मक वेबसाइट है जो सरकारी नौकरियों, एडमिट कार्ड, रिजल्ट, एडमिशन, आंसर-की और अन्य शैक्षिक अपडेट प्रदान करती है। इस वेबसाइट पर दी गई जानकारी केवल सूचना उद्देश्य के लिए है।',
+        'तेजल शिक्षा विभाग में आपका स्वागत है। हमारे आगंतुकों की गोपनीयता की सुरक्षा हमारी सर्वोच्च प्राथमिकताओं में से एक है। यह गोपनीयता नीति बताती है कि तेजल शिक्षा विभाग द्वारा कौन-कौन सी जानकारी एकत्र और रिकॉर्ड की जाती है तथा उसका उपयोग कैसे किया जाता है।',
+        'तेजल शिक्षा विभाग एक सूचनात्मक वेबसाइट है जो सरकारी नौकरियों, एडमिट कार्ड, रिजल्ट, एडमिशन, आंसर-की और अन्य शैक्षिक अपडेट प्रदान करती है। इस वेबसाइट पर दी गई जानकारी केवल सूचना उद्देश्य के लिए है।',
         'हमारी वेबसाइट का उपयोग करके आप इस गोपनीयता नीति में दिए गए नियमों और शर्तों से सहमत होते हैं।',
       ],
     },
@@ -211,7 +211,7 @@ const hindiPolicy: PolicyContent = {
     {
       heading: 'लॉग फाइल्स',
       paragraphs: [
-        'सरकारी सेवायोजन लॉग फाइल्स के उपयोग की मानक प्रक्रिया का पालन करता है। ये फाइल्स विज़िट के समय उपयोगकर्ता गतिविधि रिकॉर्ड करती हैं।',
+        'तेजल शिक्षा विभाग लॉग फाइल्स के उपयोग की मानक प्रक्रिया का पालन करता है। ये फाइल्स विज़िट के समय उपयोगकर्ता गतिविधि रिकॉर्ड करती हैं।',
         'लॉग फाइल्स में एकत्र जानकारी में शामिल हो सकता है:',
         'इस जानकारी का उपयोग ट्रेंड विश्लेषण, वेबसाइट प्रशासन, वेबसाइट पर यूज़र मूवमेंट ट्रैक करने और जनसांख्यिकीय जानकारी एकत्र करने के लिए किया जाता है।',
       ],
@@ -227,7 +227,7 @@ const hindiPolicy: PolicyContent = {
     {
       heading: 'कुकीज़ और वेब बीकन',
       paragraphs: [
-        'अन्य वेबसाइटों की तरह, सरकारी सेवायोजन भी विज़िटर की प्राथमिकताओं और एक्सेस किए गए पेजों की जानकारी स्टोर करने के लिए कुकीज़ का उपयोग करता है।',
+        'अन्य वेबसाइटों की तरह, तेजल शिक्षा विभाग भी विज़िटर की प्राथमिकताओं और एक्सेस किए गए पेजों की जानकारी स्टोर करने के लिए कुकीज़ का उपयोग करता है।',
         'कुकीज़ हमारी मदद करती हैं:',
         'यदि उपयोगकर्ता चाहें तो अपने ब्राउज़र सेटिंग्स से कुकीज़ बंद कर सकते हैं।',
       ],
@@ -249,14 +249,14 @@ const hindiPolicy: PolicyContent = {
         'https://adssettings.google.com',
         'Google अपने विज्ञापन/सेवाओं में डेटा का उपयोग कैसे करता है, इसकी जानकारी यहाँ उपलब्ध है:',
         'https://policies.google.com/technologies/ads',
-        'कृपया ध्यान दें कि तृतीय-पक्ष विज्ञापनदाताओं द्वारा उपयोग की जाने वाली कुकीज़ पर सरकारी सेवायोजन का कोई नियंत्रण नहीं है।',
+        'कृपया ध्यान दें कि तृतीय-पक्ष विज्ञापनदाताओं द्वारा उपयोग की जाने वाली कुकीज़ पर तेजल शिक्षा विभाग का कोई नियंत्रण नहीं है।',
       ],
       bullets: ['Cookies', 'Web Beacons', 'JavaScript'],
     },
     {
       heading: 'तृतीय-पक्ष गोपनीयता नीतियाँ',
       paragraphs: [
-        'सरकारी सेवायोजन की गोपनीयता नीति अन्य विज्ञापनदाताओं या वेबसाइटों पर लागू नहीं होती।',
+        'तेजल शिक्षा विभाग की गोपनीयता नीति अन्य विज्ञापनदाताओं या वेबसाइटों पर लागू नहीं होती।',
         'हमारी वेबसाइट में बाहरी वेबसाइटों (जैसे सरकारी पोर्टल या अन्य जानकारी स्रोत) के लिंक हो सकते हैं। वेबसाइट छोड़ने के बाद उन बाहरी साइटों की गोपनीयता प्रथाओं/नीतियों के लिए हम जिम्मेदार नहीं हैं।',
         'हम सुझाव देते हैं कि उपयोगकर्ता उन तृतीय-पक्ष वेबसाइटों की गोपनीयता नीतियाँ अलग से पढ़ें।',
       ],
@@ -277,7 +277,7 @@ const hindiPolicy: PolicyContent = {
       heading: 'बच्चों की जानकारी',
       paragraphs: [
         'इंटरनेट उपयोग के दौरान बच्चों की सुरक्षा हमारे लिए महत्वपूर्ण है।',
-        'सरकारी सेवायोजन 13 वर्ष से कम आयु के बच्चों से जानबूझकर कोई व्यक्तिगत पहचान योग्य जानकारी एकत्र नहीं करता है।',
+        'तेजल शिक्षा विभाग 13 वर्ष से कम आयु के बच्चों से जानबूझकर कोई व्यक्तिगत पहचान योग्य जानकारी एकत्र नहीं करता है।',
         'यदि आपको लगता है कि आपके बच्चे ने हमारी वेबसाइट पर व्यक्तिगत जानकारी साझा की है, तो तुरंत हमसे संपर्क करें। हम आवश्यक कदम उठाकर ऐसी जानकारी हटाएंगे।',
       ],
     },
@@ -312,15 +312,15 @@ const hindiPolicy: PolicyContent = {
     {
       heading: 'सहमति',
       paragraphs: [
-        'हमारी वेबसाइट सरकारी सेवायोजन का उपयोग करके आप इस गोपनीयता नीति से सहमत होते हैं और इसकी शर्तों को स्वीकार करते हैं।',
+        'हमारी वेबसाइट तेजल शिक्षा विभाग का उपयोग करके आप इस गोपनीयता नीति से सहमत होते हैं और इसकी शर्तों को स्वीकार करते हैं।',
       ],
     },
     {
       heading: 'संपर्क जानकारी',
       paragraphs: [
         'यदि आपको इस गोपनीयता नीति या हमारी वेबसाइट की प्रक्रियाओं के बारे में कोई प्रश्न है, तो आप हमसे संपर्क कर सकते हैं:',
-        'Website: Sarkari Sewayojan',
-        'Email: Helpdesk@sarkarisewayojan.com',
+        'Website: Tejal Siksha Vibhag',
+        'Email: contact@tejalsikshavibhag.com',
       ],
     },
   ],

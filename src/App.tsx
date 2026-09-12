@@ -107,7 +107,7 @@ const AppLayout = ({ children }: { children: React.ReactNode }) => {
         // Fallback for single elements containing exactly the name (only leaf nodes with no children)
         if (target.children.length === 0) {
           const elementText = (target.innerText || target.textContent || '').trim().toLowerCase();
-          if (elementText === 'sarkari sewayojan' || elementText === 'sarkarisewayojan') {
+          if (elementText === 'tejal siksha vibhag' || elementText === 'tejalsikshavibhag') {
             window.open(window.location.origin, '_blank');
           }
         }
@@ -118,7 +118,7 @@ const AppLayout = ({ children }: { children: React.ReactNode }) => {
       const text = textNode.textContent || '';
       const offset = range.startOffset;
 
-      const targets = [/sarkari\s+sewayojan/gi, /sarkarisewayojan/gi];
+      const targets = [/tejal\s+siksha\s+vibhag/gi, /tejalsikshavibhag/gi];
       let matched = false;
       let startChar = 0;
       let endChar = 0;
@@ -201,7 +201,7 @@ const AppLayout = ({ children }: { children: React.ReactNode }) => {
         const text = textNode.textContent || '';
         const offset = range.startOffset;
 
-        const targets = [/sarkari\s+sewayojan/gi, /sarkarisewayojan/gi];
+        const targets = [/tejal\s+siksha\s+vibhag/gi, /tejalsikshavibhag/gi];
         let matchedWord = false;
         let startChar = 0;
         let endChar = 0;
@@ -246,7 +246,7 @@ const AppLayout = ({ children }: { children: React.ReactNode }) => {
       } else {
         if (target.children.length === 0) {
           const elementText = (target.innerText || target.textContent || '').trim().toLowerCase();
-          if (elementText === 'sarkari sewayojan' || elementText === 'sarkarisewayojan') {
+          if (elementText === 'tejal siksha vibhag' || elementText === 'tejalsikshavibhag') {
             isOverText = true;
           }
         }

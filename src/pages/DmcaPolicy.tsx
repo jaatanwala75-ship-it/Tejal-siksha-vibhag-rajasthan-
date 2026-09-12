@@ -42,7 +42,7 @@ const englishPolicy: PolicyContent = {
     {
       heading: '1. Content Ownership',
       paragraphs: [
-        'All content published on www.sarkarisewayojan.com, including text, graphics, logos, job listings formatting, design, and code, is the property of Sarkari Sewayojan unless otherwise stated. Unauthorized use, reproduction, or copying is strictly prohibited.',
+        'All content published on tejalsikshavibhag.com, including text, graphics, logos, job listings formatting, design, and code, is the property of Tejal Siksha Vibhag unless otherwise stated. Unauthorized use, reproduction, or copying is strictly prohibited.',
       ],
     },
     {
@@ -78,7 +78,7 @@ const englishPolicy: PolicyContent = {
     {
       heading: '5. Contact for DMCA Notices',
       paragraphs: [
-        'Email: Helpdesk@sarkarisewayojan.com',
+        'Email: contact@tejalsikshavibhag.com',
       ],
     },
     {
@@ -103,7 +103,7 @@ const hindiPolicy: PolicyContent = {
     {
       heading: '1. सामग्री का स्वामित्व',
       paragraphs: [
-        'www.sarkarisewayojan.com पर प्रकाशित सभी सामग्री, जिसमें टेक्स्ट, ग्राफिक्स, लोगो, जॉब लिस्टिंग फॉर्मेटिंग, डिज़ाइन और कोड शामिल हैं, सरकारी सेवायोजन की संपत्ति है, जब तक कि अन्यथा न कहा गया हो। अनधिकृत उपयोग, पुनरुत्पादन या नकल करना सख्त वर्जित है।',
+        'tejalsikshavibhag.com पर प्रकाशित सभी सामग्री, जिसमें टेक्स्ट, ग्राफिक्स, लोगो, जॉब लिस्टिंग फॉर्मेटिंग, डिज़ाइन और कोड शामिल हैं, तेजल शिक्षा विभाग की संपत्ति है, जब तक कि अन्यथा न कहा गया हो। अनधिकृत उपयोग, पुनरुत्पादन या नकल करना सख्त वर्जित है।',
       ],
     },
     {
@@ -139,7 +139,7 @@ const hindiPolicy: PolicyContent = {
     {
       heading: '5. DMCA नोटिस के लिए संपर्क',
       paragraphs: [
-        'ईमेल: Helpdesk@sarkarisewayojan.com',
+        'ईमेल: contact@tejalsikshavibhag.com',
       ],
     },
     {

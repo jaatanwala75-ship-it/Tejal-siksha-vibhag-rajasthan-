@@ -36,7 +36,7 @@ const englishPolicy: PolicyContent = {
     {
       heading: 'Effective Date: 01-01-2026',
       paragraphs: [
-        'Welcome to www.sarkarisewayojan.com. By accessing or using our website, you agree to comply with and be bound by the following terms.',
+        'Welcome to tejalsikshavibhag.com. By accessing or using our website, you agree to comply with and be bound by the following terms.',
       ],
     },
     {
@@ -79,7 +79,7 @@ const englishPolicy: PolicyContent = {
       heading: '7. Contact',
       paragraphs: [
         'For any queries, contact us at:',
-        'Email: Helpdesk@sarkarisewayojan.com',
+        'Email: contact@tejalsikshavibhag.com',
       ],
     },
   ],
@@ -91,7 +91,7 @@ const hindiPolicy: PolicyContent = {
     {
       heading: 'प्रभावी तिथि: 01-01-2026',
       paragraphs: [
-        'www.sarkarisewayojan.com में आपका स्वागत है। हमारी वेबसाइट तक पहुँचने या उसका उपयोग करने से, आप निम्नलिखित शर्तों का पालन करने और उनसे बाध्य होने के लिए सहमत होते हैं।',
+        'tejalsikshavibhag.com में आपका स्वागत है। हमारी वेबसाइट तक पहुँचने या उसका उपयोग करने से, आप निम्नलिखित शर्तों का पालन करने और उनसे बाध्य होने के लिए सहमत होते हैं।',
       ],
     },
     {
@@ -134,7 +134,7 @@ const hindiPolicy: PolicyContent = {
       heading: '7. संपर्क',
       paragraphs: [
         'किसी भी प्रश्न के लिए, हमसे संपर्क करें:',
-        'ईमेल: Helpdesk@sarkarisewayojan.com',
+        'ईमेल: contact@tejalsikshavibhag.com',
       ],
     },
   ],

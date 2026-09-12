@@ -14,9 +14,9 @@ export default function AboutUs() {
     return getCache('home_data') || {
       settings: {
         logo_url: '/logo_icon.png',
-        header_marquee_text: 'Sarkari Sewayojan - India\'s No.1 Official Job Portal',
+        header_marquee_text: 'Tejal Siksha Vibhag - India\'s No.1 Official Job Portal',
         marquee_link: '/',
-        disclaimer_text: 'SarkariSewayojan.com is an educational news portal providing instant updates.'
+        disclaimer_text: 'tejalsikshavibhag.com is an educational news portal providing instant updates.'
       },
       categories: []
     };
@@ -38,19 +38,19 @@ export default function AboutUs() {
     "@graph": [
       {
         "@type": "AboutPage",
-        "name": "About Us - Sarkari Sewayojan",
-        "url": "https://sarkarisewayojan.com/about-us",
-        "description": "Learn about Sarkari Sewayojan, India's leading portal for Sarkari Result, Sarkari Exam, Sewayojan UP, Admit Cards, and Free Job Alerts."
+        "name": "About Us - Tejal Siksha Vibhag",
+        "url": "https://tejalsikshavibhag.com/about-us",
+        "description": "Learn about Tejal Siksha Vibhag, India's leading portal for Sarkari Result, Sarkari Exam, Sewayojan UP, Admit Cards, and Free Job Alerts."
       },
       {
         "@type": "Organization",
-        "name": "Sarkari Sewayojan",
-        "url": "https://sarkarisewayojan.com/",
-        "logo": "https://sarkarisewayojan.com/logo_icon.png",
+        "name": "Tejal Siksha Vibhag",
+        "url": "https://tejalsikshavibhag.com/",
+        "logo": "https://tejalsikshavibhag.com/logo_icon.png",
         "sameAs": [
-          "https://sarkarisewayojan.com/"
+          "https://tejalsikshavibhag.com/"
         ],
-        "description": "Sarkari Sewayojan provides accurate, fast, and verified updates regarding Government recruitment exams, results, admit cards, answer keys, and employment news across India."
+        "description": "Tejal Siksha Vibhag provides accurate, fast, and verified updates regarding Government recruitment exams, results, admit cards, answer keys, and employment news across India."
       }
     ]
   };
@@ -58,10 +58,10 @@ export default function AboutUs() {
   return (
     <div className="min-h-screen bg-background font-sans overflow-x-hidden">
       <SEO
-        title="About Us - Sarkari Sewayojan | Official Sarkari Result & Exam Portal"
-        description="About Sarkari Sewayojan (SarkariSewayojan.com) - India's most trusted portal for Sarkari Result, Sewayojan UP, Rojgar Result, Admit Cards, Syllabus, and Latest Government Job updates."
+        title="About Us - Tejal Siksha Vibhag | Official Sarkari Result & Exam Portal"
+        description="About Tejal Siksha Vibhag (tejalsikshavibhag.com) - India's most trusted portal for Sarkari Result, Sewayojan UP, Rojgar Result, Admit Cards, Syllabus, and Latest Government Job updates."
         keywords="about sarkari sewayojan, sarkari result, sarkari exam, sewayojan up, rojgar result, government job updates"
-        url="https://sarkarisewayojan.com/about-us"
+        url="https://tejalsikshavibhag.com/about-us"
         schema={aboutSchema}
       />
 
@@ -78,10 +78,10 @@ export default function AboutUs() {
               <Sparkles className="w-3.5 h-3.5" /> Official Educational Portal
             </div>
             <h1 className="text-2xl sm:text-4xl font-extrabold text-primary tracking-tight">
-              About Sarkari Sewayojan
+              About Tejal Siksha Vibhag
             </h1>
             <p className="text-muted-foreground text-sm sm:text-base max-w-3xl mx-auto leading-relaxed">
-              Welcome to <span className="font-bold text-foreground">SarkariSewayojan.com</span> — India’s premier job notification portal dedicated to empowering job seekers with fast, verified, and transparent updates for government exams, results, admit cards, and employment news.
+              Welcome to <span className="font-bold text-foreground">tejalsikshavibhag.com</span> — India’s premier job notification portal dedicated to empowering job seekers with fast, verified, and transparent updates for government exams, results, admit cards, and employment news.
             </p>
           </div>
 
@@ -103,7 +103,7 @@ export default function AboutUs() {
               </div>
               <h3 className="font-bold text-lg">100% Verified Information</h3>
               <p className="text-xs sm:text-sm text-muted-foreground leading-relaxed">
-                Every notification, admit card link, and Sarkari Result hosted on Sarkari Sewayojan is cross-checked directly from official government commission websites (UPSC, SSC, UPSSSC, Railways, NTA, Banking, etc.).
+                Every notification, admit card link, and Sarkari Result hosted on Tejal Siksha Vibhag is cross-checked directly from official government commission websites (UPSC, SSC, UPSSSC, Railways, NTA, Banking, etc.).
               </p>
             </div>
 
@@ -125,16 +125,16 @@ export default function AboutUs() {
                 Who We Are (हमारे बारे में)
               </h2>
               <p>
-                <strong>Sarkari Sewayojan</strong> (SarkariSewayojan.com) is an independent educational news and career information platform founded to help millions of Indian youth find reliable career guidance. We track recruitment notices across Central Government departments, State Public Service Commissions (UPPSC, MPPSC, BPSC, UKPSC, etc.), Staff Selection Commission (SSC), Railway Recruitment Board (RRB), Defence, Banking (IBPS, SBI), Teaching (CTET, UPTET), and State Employment Exchanges like Sewayojan UP (Rozgar Sangam Uttar Pradesh).
+                <strong>Tejal Siksha Vibhag</strong> (tejalsikshavibhag.com) is an independent educational news and career information platform founded to help millions of Indian youth find reliable career guidance. We track recruitment notices across Central Government departments, State Public Service Commissions (UPPSC, MPPSC, BPSC, UKPSC, etc.), Staff Selection Commission (SSC), Railway Recruitment Board (RRB), Defence, Banking (IBPS, SBI), Teaching (CTET, UPTET), and State Employment Exchanges like Sewayojan UP (Rozgar Sangam Uttar Pradesh).
               </p>
               <p className="hindi-text font-serif">
-                सरकारी सेवायोजन (SarkariSewayojan.com) भारत का एक अग्रणी और विश्वसनीय जॉब पोर्टल है। हमारा उद्देश्य देश भर के युवाओं को सरकारी नौकरियों (Sarkari Naukri), सरकारी रिजल्ट (Sarkari Result), प्रवेश पत्र (Admit Card), उत्तर कुंजी (Answer Key), पाठ्यक्रम (Syllabus) और उत्तर प्रदेश सेवायोजन (Sewayojan UP) की सटीक और सबसे तेज जानकारी प्रदान करना है।
+                सरकारी सेवायोजन (tejalsikshavibhag.com) भारत का एक अग्रणी और विश्वसनीय जॉब पोर्टल है। हमारा उद्देश्य देश भर के युवाओं को सरकारी नौकरियों (Sarkari Naukri), सरकारी रिजल्ट (Sarkari Result), प्रवेश पत्र (Admit Card), उत्तर कुंजी (Answer Key), पाठ्यक्रम (Syllabus) और उत्तर प्रदेश सेवायोजन (Sewayojan UP) की सटीक और सबसे तेज जानकारी प्रदान करना है।
               </p>
             </section>
 
             <section className="space-y-3">
               <h2 className="text-lg font-bold text-foreground border-l-4 border-primary pl-3">
-                Key Features of Sarkari Sewayojan
+                Key Features of Tejal Siksha Vibhag
               </h2>
               <ul className="grid grid-cols-1 sm:grid-cols-2 gap-2 text-foreground font-medium text-xs sm:text-sm">
                 <li className="flex items-center gap-2"><CheckCircle2 className="w-4 h-4 text-emerald-600 shrink-0" /> Real-time Sarkari Result & Score Card updates</li>
@@ -151,7 +151,7 @@ export default function AboutUs() {
                 <Globe className="w-4 h-4 text-primary" /> Content Transparency & Disclaimer
               </h2>
               <p className="text-xs">
-                Sarkari Sewayojan is a private educational portal operated for informational purposes only. We are not a government body or recruitment agency. All logos, trademarks, and exam names belong to their respective government departments. Official links are provided directly to official government portals for user convenience.
+                Tejal Siksha Vibhag is a private educational portal operated for informational purposes only. We are not a government body or recruitment agency. All logos, trademarks, and exam names belong to their respective government departments. Official links are provided directly to official government portals for user convenience.
               </p>
             </section>
           </div>
