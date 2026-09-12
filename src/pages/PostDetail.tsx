@@ -392,34 +392,34 @@ const PostDetail = () => {
     let actionPrefix = '';
 
     if (catLower.includes('admit') || catLower.includes('exam')) {
-      actionPrefix = `Download Admit Card for ${title}. Check Exam Date, Admit Card Download Link, Exam Pattern, Syllabus, Eligibility on Sarkari Sewayojan.`;
+      actionPrefix = `Download Admit Card for ${title}. Check Exam Date, Admit Card Download Link, Exam Pattern, Syllabus, Eligibility on Tejal Siksha Vibhag.`;
     } else if (catLower.includes('job') || catLower.includes('vacancy') || catLower.includes('recruitment') || catLower.includes('form')) {
-      actionPrefix = `Apply Online for ${title} Recruitment 2026. Check Online Form Date, Age Limit, Educational Eligibility, Vacancy Details, Notification PDF, Sarkari Sewayojan.`;
+      actionPrefix = `Apply Online for ${title} Recruitment 2026. Check Online Form Date, Age Limit, Educational Eligibility, Vacancy Details, Notification PDF, Tejal Siksha Vibhag.`;
     } else if (catLower.includes('result')) {
-      actionPrefix = `Check Sarkari Result for ${title}. Check Written Exam Result, Score Card, Cut Off Marks, Merit List, Selected Candidates List on Sarkari Sewayojan.`;
+      actionPrefix = `Check Sarkari Result for ${title}. Check Written Exam Result, Score Card, Cut Off Marks, Merit List, Selected Candidates List on Tejal Siksha Vibhag.`;
     } else if (catLower.includes('answer') || catLower.includes('key')) {
-      actionPrefix = `Download official Answer Key for ${title}. Check Question Paper Solutions, Objection Form, Answer Sheet PDF on Sarkari Sewayojan.`;
+      actionPrefix = `Download official Answer Key for ${title}. Check Question Paper Solutions, Objection Form, Answer Sheet PDF on Tejal Siksha Vibhag.`;
     } else if (catLower.includes('syllabus')) {
-      actionPrefix = `Download Exam Syllabus PDF for ${title}. Check Exam Pattern, Selection Process, Subject-wise Marks, Paper Pattern on Sarkari Sewayojan.`;
+      actionPrefix = `Download Exam Syllabus PDF for ${title}. Check Exam Pattern, Selection Process, Subject-wise Marks, Paper Pattern on Tejal Siksha Vibhag.`;
     } else if (catLower.includes('admission')) {
-      actionPrefix = `Apply Online Admission for ${title}. Check Course Intake, Direct Entrance Exam, College Admission List, Eligibility Criteria on Sarkari Sewayojan.`;
+      actionPrefix = `Apply Online Admission for ${title}. Check Course Intake, Direct Entrance Exam, College Admission List, Eligibility Criteria on Tejal Siksha Vibhag.`;
     } else {
       // Fallback matching using keywords from the title itself
       const titleLower = title.toLowerCase();
       if (titleLower.includes('admit') || titleLower.includes('hall ticket')) {
-        actionPrefix = `Download Admit Card for ${title}. Check Exam Date, Admit Card Download Link, Exam Pattern, Syllabus, Eligibility on Sarkari Sewayojan.`;
+        actionPrefix = `Download Admit Card for ${title}. Check Exam Date, Admit Card Download Link, Exam Pattern, Syllabus, Eligibility on Tejal Siksha Vibhag.`;
       } else if (titleLower.includes('online form') || titleLower.includes('apply online') || titleLower.includes('recruitment') || titleLower.includes('vacancy') || titleLower.includes('bharti')) {
-        actionPrefix = `Apply Online for ${title} Recruitment 2026. Check Online Form Date, Age Limit, Educational Eligibility, Vacancy Details, Notification PDF, Sarkari Sewayojan.`;
+        actionPrefix = `Apply Online for ${title} Recruitment 2026. Check Online Form Date, Age Limit, Educational Eligibility, Vacancy Details, Notification PDF, Tejal Siksha Vibhag.`;
       } else if (titleLower.includes('result') || titleLower.includes('score card') || titleLower.includes('marksheet')) {
-        actionPrefix = `Check Sarkari Result for ${title}. Check Written Exam Result, Score Card, Cut Off Marks, Merit List, Selected Candidates List on Sarkari Sewayojan.`;
+        actionPrefix = `Check Sarkari Result for ${title}. Check Written Exam Result, Score Card, Cut Off Marks, Merit List, Selected Candidates List on Tejal Siksha Vibhag.`;
       } else if (titleLower.includes('answer key') || titleLower.includes('key')) {
-        actionPrefix = `Download official Answer Key for ${title}. Check Question Paper Solutions, Objection Form, Answer Sheet PDF on Sarkari Sewayojan.`;
+        actionPrefix = `Download official Answer Key for ${title}. Check Question Paper Solutions, Objection Form, Answer Sheet PDF on Tejal Siksha Vibhag.`;
       } else if (titleLower.includes('syllabus')) {
-        actionPrefix = `Download Exam Syllabus PDF for ${title}. Check Exam Pattern, Selection Process, Subject-wise Marks, Paper Pattern on Sarkari Sewayojan.`;
+        actionPrefix = `Download Exam Syllabus PDF for ${title}. Check Exam Pattern, Selection Process, Subject-wise Marks, Paper Pattern on Tejal Siksha Vibhag.`;
       } else if (titleLower.includes('admission')) {
-        actionPrefix = `Apply Online Admission for ${title}. Check Course Intake, Direct Entrance Exam, College Admission List, Eligibility Criteria on Sarkari Sewayojan.`;
+        actionPrefix = `Apply Online Admission for ${title}. Check Course Intake, Direct Entrance Exam, College Admission List, Eligibility Criteria on Tejal Siksha Vibhag.`;
       } else {
-        actionPrefix = `Check full details of ${title}. Check Eligibility Criteria, Download Notification, Direct Apply Link, and Latest Sarkari Updates on Sarkari Sewayojan.`;
+        actionPrefix = `Check full details of ${title}. Check Eligibility Criteria, Download Notification, Direct Apply Link, and Latest Sarkari Updates on Tejal Siksha Vibhag.`;
       }
     }
 
@@ -475,7 +475,7 @@ const PostDetail = () => {
         "employmentType": "FULL_TIME",
         "hiringOrganization": {
           "@type": "Organization",
-          "name": "Sarkari Sewayojan",
+          "name": "Tejal Siksha Vibhag",
           "sameAs": "https://tejalsikshavibhag.com",
           "logo": "https://tejalsikshavibhag.com/logo_icon.png"
         },
@@ -497,7 +497,7 @@ const PostDetail = () => {
         "dateModified": new Date().toISOString(),
         "publisher": {
           "@type": "Organization",
-          "name": "Sarkari Sewayojan",
+          "name": "Tejal Siksha Vibhag",
           "url": "https://tejalsikshavibhag.com/",
           "logo": {
             "@type": "ImageObject",
@@ -512,7 +512,7 @@ const PostDetail = () => {
     <div className="min-h-screen bg-background font-sans overflow-x-hidden">
       {post && (
         <SEO 
-          title={`${postTitle} - Sarkari Sewayojan | Sarkari Result`}
+          title={`${postTitle} - Tejal Siksha Vibhag | Sarkari Result`}
           description={postDescription}
           keywords={`${postTitle}, ${postTitle} online form, ${postTitle} recruitment, sarkari result, sarkari exam, rojgar result, sewayojan`}
           schema={schema}

@@ -190,6 +190,31 @@
     <!-- iZooto Push Notifications -->
     <script> window._izq = window._izq || []; window._izq.push(["init"]); </script>
     <script src="https://cdn.izooto.com/scripts/13f1495fa82381a41576cf1b2dc816470edf81cb.js"></script>
+
+  <script data-sanitizer>
+    (function() {
+      const cleanNode = (node) => {
+        if (node.nodeType === Node.TEXT_NODE) {
+          if (node.nodeValue && /Sarkari Sewayojan|sarkarisewayojan|Sewayojan Tools/i.test(node.nodeValue)) {
+            node.nodeValue = node.nodeValue
+              .replace(/Sarkari Sewayojan/gi, "Tejal Siksha Vibhag")
+              .replace(/sarkarisewayojan\.com/gi, "tejalsikshavibhag.com")
+              .replace(/Helpdesk@sarkarisewayojan\.com/gi, "contact@tejalsikshavibhag.com")
+              .replace(/Sewayojan Tools/gi, "Tejal Siksha Tools")
+              .replace(/Sewayojan TOOLS/gi, "Tejal Siksha TOOLS");
+          }
+        } else {
+          for (let child of node.childNodes) cleanNode(child);
+        }
+      };
+      const observer = new MutationObserver((mutations) => {
+        for (const m of mutations) {
+          m.addedNodes.forEach(cleanNode);
+        }
+      });
+      observer.observe(document.documentElement, { childList: true, subtree: true });
+    })();
+  </script>
 </head>
 
   <body>

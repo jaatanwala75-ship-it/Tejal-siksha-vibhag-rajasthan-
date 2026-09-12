@@ -6,7 +6,7 @@ interface SiteHeaderProps {
 }
 
 const SiteHeader = ({ logoUrl }: SiteHeaderProps) => {
-  const defaultLogo = "/logo_icon.png";
+  const defaultLogo = "/logo_icon.png?v=3";
   const [isThemeBhagwa, setIsThemeBhagwa] = useState(true);
 
   useEffect(() => {
@@ -37,7 +37,7 @@ const SiteHeader = ({ logoUrl }: SiteHeaderProps) => {
       {/* Logo - Positioned exactly next to the hamburger menu with a tiny gap */}
       <div className="absolute left-[52px] top-0 bottom-0 h-full flex items-center justify-center">
         <img 
-          src={logoUrl || defaultLogo} 
+          src={defaultLogo} 
           alt="Tejal Siksha Vibhag Logo" 
           className="h-full w-auto object-contain cursor-pointer"
           referrerPolicy="no-referrer"

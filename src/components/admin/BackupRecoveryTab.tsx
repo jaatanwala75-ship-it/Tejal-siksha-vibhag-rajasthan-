@@ -106,7 +106,7 @@ export const BackupRecoveryTab = () => {
   const triggerSafetyCycle = useCallback(async (vaultDisabled: boolean, fileEnabled: boolean) => {
     try {
       const todayString = new Date().toISOString().split('T')[0]; // Format: YYYY-MM-DD
-      const lastBackupDate = localStorage.getItem('sarkari_sewayojan_last_auto_backup_date');
+      const lastBackupDate = localStorage.getItem('tejal_siksha_vibhag_last_auto_backup_date');
 
       // If backed up today already, bypass automatic generation to conserve bandwidth
       if (lastBackupDate === todayString) {
@@ -159,7 +159,7 @@ export const BackupRecoveryTab = () => {
         posts: fullPosts,
         settings_flat,
         backup_timestamp: new Date().toISOString(),
-        source: 'Sarkari_Sewayojan_Auto_Shield'
+        source: 'Tejal_Siksha_Vibhag_Auto_Shield'
       };
 
       // A. Save to Browser Local Vault (IndexedDB)
@@ -177,7 +177,7 @@ export const BackupRecoveryTab = () => {
         const url = URL.createObjectURL(blob);
         const link = document.createElement('a');
         link.href = url;
-        link.download = `Sarkari_Sewayojan_AUTO_BACKUP_${todayString}.json`;
+        link.download = `Tejal_Siksha_Vibhag_AUTO_BACKUP_${todayString}.json`;
         document.body.appendChild(link);
         link.click();
         document.body.removeChild(link);
@@ -185,7 +185,7 @@ export const BackupRecoveryTab = () => {
       }
 
       // Update timestamp to avoid running multiple times on the same day
-      localStorage.setItem('sarkari_sewayojan_last_auto_backup_date', todayString);
+      localStorage.setItem('tejal_siksha_vibhag_last_auto_backup_date', todayString);
       
       // Refresh state details
       fetchVaultDetails();
@@ -205,8 +205,8 @@ export const BackupRecoveryTab = () => {
   // 3. Load configuration and existing local vault backup details on mount
   useEffect(() => {
     // 1. Load preferences from localStorage
-    const savedAutoVault = localStorage.getItem('sarkari_sewayojan_pref_autovault');
-    const savedAutoFile = localStorage.getItem('sarkari_sewayojan_pref_autofile');
+    const savedAutoVault = localStorage.getItem('tejal_siksha_vibhag_pref_autovault');
+    const savedAutoFile = localStorage.getItem('tejal_siksha_vibhag_pref_autofile');
 
     if (savedAutoVault !== null) {
       setAutoVaultEnabled(savedAutoVault === 'true');
@@ -228,7 +228,7 @@ export const BackupRecoveryTab = () => {
   // Preference Settings updates
   const handleToggleAutoVault = (checked: boolean) => {
     setAutoVaultEnabled(checked);
-    localStorage.setItem('sarkari_sewayojan_pref_autovault', checked ? 'true' : 'false');
+    localStorage.setItem('tejal_siksha_vibhag_pref_autovault', checked ? 'true' : 'false');
     toast({
       title: 'पसंद सहेजी गई!',
       description: checked ? 'स्वचालित ब्राउज़र वॉल्ट बैकअप चालू है।' : 'स्वचालित ब्राउज़र वॉल्ट बैकअप बंद कर दिया गया है।',
@@ -237,7 +237,7 @@ export const BackupRecoveryTab = () => {
 
   const handleToggleAutoFile = (checked: boolean) => {
     setAutoFileEnabled(checked);
-    localStorage.setItem('sarkari_sewayojan_pref_autofile', checked ? 'true' : 'false');
+    localStorage.setItem('tejal_siksha_vibhag_pref_autofile', checked ? 'true' : 'false');
     toast({
       title: 'पसंद सहेजी गई!',
       description: checked ? 'दैनिक कंप्यूटर फाइल ऑटो-डाउनलोड चालू कर दिया गया है।' : 'दैनिक कंप्यूटर फाइल ऑटो-डाउनलोड बंद है।',
@@ -290,7 +290,7 @@ export const BackupRecoveryTab = () => {
         posts: fullPosts,
         settings_flat,
         backup_timestamp: new Date().toISOString(),
-        source: 'Sarkari_Sewayojan_Manual_Export'
+        source: 'Tejal_Siksha_Vibhag_Manual_Export'
       };
 
       // Save to IndexedDB on manual trigger as well for maximum resilience
@@ -302,7 +302,7 @@ export const BackupRecoveryTab = () => {
       const link = document.createElement('a');
       const dateString = new Date().toISOString().split('T')[0];
       link.href = url;
-      link.download = `Sarkari_Sewayojan_Backup_${dateString}.json`;
+      link.download = `Tejal_Siksha_Vibhag_Backup_${dateString}.json`;
       document.body.appendChild(link);
       link.click();
       document.body.removeChild(link);
@@ -855,7 +855,7 @@ export const BackupRecoveryTab = () => {
               <span>IST TIME</span>
             </div>
             <div className="flex-1 overflow-y-auto space-y-1.5 p-1 scrollbar-thin scrollbar-thumb-slate-800">
-              <p className="text-green-400">[System] Sarkari Sewayojan Auto Backup Engine Active.</p>
+              <p className="text-green-400">[System] Tejal Siksha Vibhag Auto Backup Engine Active.</p>
               <p className="text-slate-400">[System] Offline cache layers linked and persistent cache is active.</p>
               {autoVaultEnabled && (
                 <p className="text-emerald-400">[System] Automatic Browser Vault configuration enabled.</p>
@@ -899,7 +899,7 @@ export const AutoBackupTrigger = () => {
     const triggerSafetyBackup = async () => {
       try {
         const todayString = new Date().toISOString().split('T')[0]; // Format: YYYY-MM-DD
-        const lastBackupDate = localStorage.getItem('sarkari_sewayojan_last_auto_backup_date');
+        const lastBackupDate = localStorage.getItem('tejal_siksha_vibhag_last_auto_backup_date');
 
         // Check if backed up today already
         if (lastBackupDate === todayString) {
@@ -907,8 +907,8 @@ export const AutoBackupTrigger = () => {
           return;
         }
 
-        const savedAutoVault = localStorage.getItem('sarkari_sewayojan_pref_autovault') !== 'false'; // defaults to true
-        const savedAutoFile = localStorage.getItem('sarkari_sewayojan_pref_autofile') === 'true'; // defaults to false
+        const savedAutoVault = localStorage.getItem('tejal_siksha_vibhag_pref_autovault') !== 'false'; // defaults to true
+        const savedAutoFile = localStorage.getItem('tejal_siksha_vibhag_pref_autofile') === 'true'; // defaults to false
 
         // If both options are disabled, exit
         if (!savedAutoVault && !savedAutoFile) {
@@ -950,7 +950,7 @@ export const AutoBackupTrigger = () => {
           posts: fullPosts,
           settings_flat,
           backup_timestamp: new Date().toISOString(),
-          source: 'Sarkari_Sewayojan_Auto_Shield'
+          source: 'Tejal_Siksha_Vibhag_Auto_Shield'
         };
 
         // A. Save to Browser Local Vault (IndexedDB)
@@ -964,7 +964,7 @@ export const AutoBackupTrigger = () => {
           const url = URL.createObjectURL(blob);
           const link = document.createElement('a');
           link.href = url;
-          link.download = `Sarkari_Sewayojan_AUTO_BACKUP_${todayString}.json`;
+          link.download = `Tejal_Siksha_Vibhag_AUTO_BACKUP_${todayString}.json`;
           document.body.appendChild(link);
           link.click();
           document.body.removeChild(link);
@@ -972,7 +972,7 @@ export const AutoBackupTrigger = () => {
         }
 
         // Update last auto backup date
-        localStorage.setItem('sarkari_sewayojan_last_auto_backup_date', todayString);
+        localStorage.setItem('tejal_siksha_vibhag_last_auto_backup_date', todayString);
 
         toast({
           title: 'दैनिक सुरक्षा चक्र सक्रिय!',

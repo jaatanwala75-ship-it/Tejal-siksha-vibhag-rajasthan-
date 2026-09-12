@@ -389,34 +389,34 @@ async function generate() {
       let actionPrefix = '';
 
       if (catLower.includes('admit') || catLower.includes('exam')) {
-        actionPrefix = `Download Admit Card for ${title}. Check Exam Date, Admit Card Download Link, Exam Pattern, Syllabus, Eligibility on Sarkari Sewayojan.`;
+        actionPrefix = `Download Admit Card for ${title}. Check Exam Date, Admit Card Download Link, Exam Pattern, Syllabus, Eligibility on Tejal Siksha Vibhag.`;
       } else if (catLower.includes('job') || catLower.includes('vacancy') || catLower.includes('recruitment') || catLower.includes('form')) {
-        actionPrefix = `Apply Online for ${title} Recruitment 2026. Check Online Form Date, Age Limit, Educational Eligibility, Vacancy Details, Notification PDF, Sarkari Sewayojan.`;
+        actionPrefix = `Apply Online for ${title} Recruitment 2026. Check Online Form Date, Age Limit, Educational Eligibility, Vacancy Details, Notification PDF, Tejal Siksha Vibhag.`;
       } else if (catLower.includes('result')) {
-        actionPrefix = `Check Sarkari Result for ${title}. Check Written Exam Result, Score Card, Cut Off Marks, Merit List, Selected Candidates List on Sarkari Sewayojan.`;
+        actionPrefix = `Check Sarkari Result for ${title}. Check Written Exam Result, Score Card, Cut Off Marks, Merit List, Selected Candidates List on Tejal Siksha Vibhag.`;
       } else if (catLower.includes('answer') || catLower.includes('key')) {
-        actionPrefix = `Download official Answer Key for ${title}. Check Question Paper Solutions, Objection Form, Answer Sheet PDF on Sarkari Sewayojan.`;
+        actionPrefix = `Download official Answer Key for ${title}. Check Question Paper Solutions, Objection Form, Answer Sheet PDF on Tejal Siksha Vibhag.`;
       } else if (catLower.includes('syllabus')) {
-        actionPrefix = `Download Exam Syllabus PDF for ${title}. Check Exam Pattern, Selection Process, Subject-wise Marks, Paper Pattern on Sarkari Sewayojan.`;
+        actionPrefix = `Download Exam Syllabus PDF for ${title}. Check Exam Pattern, Selection Process, Subject-wise Marks, Paper Pattern on Tejal Siksha Vibhag.`;
       } else if (catLower.includes('admission')) {
-        actionPrefix = `Apply Online Admission for ${title}. Check Course Intake, Direct Entrance Exam, College Admission List, Eligibility Criteria on Sarkari Sewayojan.`;
+        actionPrefix = `Apply Online Admission for ${title}. Check Course Intake, Direct Entrance Exam, College Admission List, Eligibility Criteria on Tejal Siksha Vibhag.`;
       } else {
         // Fallback matching using keywords from the title itself
         const titleLower = title.toLowerCase();
         if (titleLower.includes('admit') || titleLower.includes('hall ticket')) {
-          actionPrefix = `Download Admit Card for ${title}. Check Exam Date, Admit Card Download Link, Exam Pattern, Syllabus, Eligibility on Sarkari Sewayojan.`;
+          actionPrefix = `Download Admit Card for ${title}. Check Exam Date, Admit Card Download Link, Exam Pattern, Syllabus, Eligibility on Tejal Siksha Vibhag.`;
         } else if (titleLower.includes('online form') || titleLower.includes('apply online') || titleLower.includes('recruitment') || titleLower.includes('vacancy') || titleLower.includes('bharti')) {
-          actionPrefix = `Apply Online for ${title} Recruitment 2026. Check Online Form Date, Age Limit, Educational Eligibility, Vacancy Details, Notification PDF, Sarkari Sewayojan.`;
+          actionPrefix = `Apply Online for ${title} Recruitment 2026. Check Online Form Date, Age Limit, Educational Eligibility, Vacancy Details, Notification PDF, Tejal Siksha Vibhag.`;
         } else if (titleLower.includes('result') || titleLower.includes('score card') || titleLower.includes('marksheet')) {
-          actionPrefix = `Check Sarkari Result for ${title}. Check Written Exam Result, Score Card, Cut Off Marks, Merit List, Selected Candidates List on Sarkari Sewayojan.`;
+          actionPrefix = `Check Sarkari Result for ${title}. Check Written Exam Result, Score Card, Cut Off Marks, Merit List, Selected Candidates List on Tejal Siksha Vibhag.`;
         } else if (titleLower.includes('answer key') || titleLower.includes('key')) {
-          actionPrefix = `Download official Answer Key for ${title}. Check Question Paper Solutions, Objection Form, Answer Sheet PDF on Sarkari Sewayojan.`;
+          actionPrefix = `Download official Answer Key for ${title}. Check Question Paper Solutions, Objection Form, Answer Sheet PDF on Tejal Siksha Vibhag.`;
         } else if (titleLower.includes('syllabus')) {
-          actionPrefix = `Download Exam Syllabus PDF for ${title}. Check Exam Pattern, Selection Process, Subject-wise Marks, Paper Pattern on Sarkari Sewayojan.`;
+          actionPrefix = `Download Exam Syllabus PDF for ${title}. Check Exam Pattern, Selection Process, Subject-wise Marks, Paper Pattern on Tejal Siksha Vibhag.`;
         } else if (titleLower.includes('admission')) {
-          actionPrefix = `Apply Online Admission for ${title}. Check Course Intake, Direct Entrance Exam, College Admission List, Eligibility Criteria on Sarkari Sewayojan.`;
+          actionPrefix = `Apply Online Admission for ${title}. Check Course Intake, Direct Entrance Exam, College Admission List, Eligibility Criteria on Tejal Siksha Vibhag.`;
         } else {
-          actionPrefix = `Check full details of ${title}. Check Eligibility Criteria, Download Notification, Direct Apply Link, and Latest Sarkari Updates on Sarkari Sewayojan.`;
+          actionPrefix = `Check full details of ${title}. Check Eligibility Criteria, Download Notification, Direct Apply Link, and Latest Sarkari Updates on Tejal Siksha Vibhag.`;
         }
       }
 
@@ -432,7 +432,7 @@ async function generate() {
 
     const postCategory = getPostCategoryName(post);
     const postDescription = generateDynamicDescription(post, postCategory);
-    generatePage(`/post/${post.slug || post.id}`, postData, `post/${post.slug || post.id}.html`, `${post.name_of_post} - Sarkari Sewayojan`, postDescription);
+    generatePage(`/post/${post.slug || post.id}`, postData, `post/${post.slug || post.id}.html`, `${post.name_of_post} - Tejal Siksha Vibhag`, postDescription);
     
     // Generate individual JSON file for client-side navigation
     fs.writeFileSync(path.resolve(dataDir, `post_${post.slug || post.id}.json`), JSON.stringify(post));
@@ -443,7 +443,7 @@ async function generate() {
   }
 
   // 1. Generate Home Page (moved here so homeData has the populated search_corpus)
-  generatePage('/', homeData, 'index.html', settings.tagline || 'Sarkari Sewayojan', 'Latest Government Jobs, Results & Notifications');
+  generatePage('/', homeData, 'index.html', settings.tagline || 'Tejal Siksha Vibhag', 'Latest Government Jobs, Results & Notifications');
 
   // 3. Generate Category Pages
   for (const cat of categories) {
@@ -452,15 +452,15 @@ async function generate() {
     };
     // Use the raw category name for the file path, but encode it for the URL
     const catPath = `category/${cat.name}.html`;
-    generatePage(`/category/${encodeURIComponent(cat.name)}`, catData, catPath, `${cat.name} - Sarkari Sewayojan`, `All updates for ${cat.name}`);
+    generatePage(`/category/${encodeURIComponent(cat.name)}`, catData, catPath, `${cat.name} - Tejal Siksha Vibhag`, `All updates for ${cat.name}`);
   }
 
   // 4. Generate Static Policy Pages
-  generatePage('/privacy-policy', homeData, 'privacy-policy.html', 'Privacy Policy - Sarkari Sewayojan', 'Privacy Policy');
-  generatePage('/dmca-policy', homeData, 'dmca-policy.html', 'DMCA Policy - Sarkari Sewayojan', 'DMCA Policy');
-  generatePage('/terms-and-conditions', homeData, 'terms-and-conditions.html', 'Terms and Conditions - Sarkari Sewayojan', 'Terms and Conditions');
-  generatePage('/contact-us', homeData, 'contact-us.html', 'Contact Us - Sarkari Sewayojan', 'Contact Us');
-  generatePage('/fact-checking-policy', homeData, 'fact-checking-policy.html', 'Fact Checking Policy - Sarkari Sewayojan', 'Fact Checking Policy');
+  generatePage('/privacy-policy', homeData, 'privacy-policy.html', 'Privacy Policy - Tejal Siksha Vibhag', 'Privacy Policy');
+  generatePage('/dmca-policy', homeData, 'dmca-policy.html', 'DMCA Policy - Tejal Siksha Vibhag', 'DMCA Policy');
+  generatePage('/terms-and-conditions', homeData, 'terms-and-conditions.html', 'Terms and Conditions - Tejal Siksha Vibhag', 'Terms and Conditions');
+  generatePage('/contact-us', homeData, 'contact-us.html', 'Contact Us - Tejal Siksha Vibhag', 'Contact Us');
+  generatePage('/fact-checking-policy', homeData, 'fact-checking-policy.html', 'Fact Checking Policy - Tejal Siksha Vibhag', 'Fact Checking Policy');
 
   // 5. Generate Admin Shell
   const adminHtml = template.replace(`<!--ssr-outlet-->`, '')
@@ -471,7 +471,7 @@ async function generate() {
   // 5.5 Generate Search Shell
   const scriptTag = `<script>window.__INITIAL_DATA__ = ${JSON.stringify(homeData).replace(/</g, '\\u003c')};</script>`;
   const searchHtml = template.replace(`<!--ssr-outlet-->`, '')
-                             .replace(`<title>Vite + React + TS</title>`, `<title>Search Results - Sarkari Sewayojan</title>`)
+                             .replace(`<title>Vite + React + TS</title>`, `<title>Search Results - Tejal Siksha Vibhag</title>`)
                              .replace(`<div id="root"></div>`, `<div id="root"><div style="min-height: 100vh; display: flex; align-items: center; justify-content: center; font-family: sans-serif; font-size: 20px; font-weight: bold; color: #0b3d91;">Loading...</div></div>`)
                              .replace('</body>', `${scriptTag}</body>`);
   fs.writeFileSync(path.resolve(outDir, 'search.html'), searchHtml);
@@ -479,7 +479,7 @@ async function generate() {
 
   // 5.6 Generate Category Shell
   const categoryHtml = template.replace(`<!--ssr-outlet-->`, '')
-                               .replace(`<title>Vite + React + TS</title>`, `<title>Section Details - Sarkari Sewayojan</title>`)
+                               .replace(`<title>Vite + React + TS</title>`, `<title>Section Details - Tejal Siksha Vibhag</title>`)
                                .replace(`<div id="root"></div>`, `<div id="root"><div style="min-height: 100vh; display: flex; align-items: center; justify-content: center; font-family: sans-serif; font-size: 20px; font-weight: bold; color: #0b3d91;">Loading...</div></div>`)
                                .replace('</body>', `${scriptTag}</body>`);
   fs.writeFileSync(path.resolve(outDir, 'category_shell.html'), categoryHtml);
@@ -493,7 +493,7 @@ async function generate() {
   console.log(`Generated data.json`);
 
   // 7. Generate Sitemap
-  const baseUrl = 'https://sarkarisewayojan.com';
+  const baseUrl = 'https://tejalsikshavibhag.com';
   let sitemapUrls = `
     <url>
       <loc>${baseUrl}/</loc>

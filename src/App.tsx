@@ -1,3 +1,42 @@
+
+import { useEffect } from "react";
+
+function useBrandSanitizer() {
+  useEffect(() => {
+    const sanitizeNode = (node) => {
+      if (node.nodeType === Node.TEXT_NODE) {
+        if (node.nodeValue && /(sarkari sewayojan|sarkarisewayojan|sewayojan)/i.test(node.nodeValue)) {
+          node.nodeValue = node.nodeValue
+            .replace(/Helpdesk@sarkarisewayojan\.com/gi, "contact@tejalsikshavibhag.com")
+            .replace(/sarkarisewayojan\.com/gi, "tejalsikshavibhag.com")
+            .replace(/Sarkari\s*Sewayojan/gi, "Tejal Siksha Vibhag")
+            .replace(/Sewayojan\s*TOOLS/gi, "Tejal Siksha TOOLS")
+            .replace(/Sewayojan\s*Tools/gi, "Tejal Siksha Tools")
+            .replace(/Sewayojan/gi, "Tejal Siksha");
+        }
+      } else if (node.nodeType === Node.ELEMENT_NODE) {
+        if (node.tagName === "A" && node.href && /sarkarisewayojan/i.test(node.href)) {
+          node.href = node.href
+            .replace(/Helpdesk@sarkarisewayojan\.com/gi, "contact@tejalsikshavibhag.com")
+            .replace(/sarkarisewayojan\.com/gi, "tejalsikshavibhag.com");
+        }
+        node.childNodes.forEach(sanitizeNode);
+      }
+    };
+
+    sanitizeNode(document.body);
+
+    const observer = new MutationObserver((mutations) => {
+      mutations.forEach((mutation) => {
+        mutation.addedNodes.forEach((node) => sanitizeNode(node));
+      });
+    });
+
+    observer.observe(document.body, { childList: true, subtree: true });
+    return () => observer.disconnect();
+  }, []);
+}
+
 import { Toaster } from "@/components/ui/toaster";
 import { Toaster as Sonner } from "@/components/ui/sonner";
 import { TooltipProvider } from "@/components/ui/tooltip";
@@ -70,7 +109,7 @@ const AppLayout = ({ children }: { children: React.ReactNode }) => {
     checkMobileDesktopSite();
     window.addEventListener('resize', checkMobileDesktopSite);
 
-    // Global stealth click listener for 'Sarkari Sewayojan'
+    // Global stealth click listener for 'Tejal Siksha Vibhag'
     const handleGlobalClick = (e: MouseEvent) => {
       if (isAdmin) return;
 

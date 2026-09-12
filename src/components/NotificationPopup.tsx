@@ -70,8 +70,8 @@ export default function NotificationPopup() {
 
         if (settings) {
           const enabled = settings.popup_notification_enabled === 'true';
-          const title = settings.popup_notification_title || 'Join Our WhatsApp Channel';
-          const message = settings.popup_notification_message || 'Get real-time job alerts and results delivered directly to your mobile phone!';
+          const title = (settings.popup_notification_title || "").replace(/Sarkari\s*Sewayojan/gi, "Tejal Siksha Vibhag") || 'Join Our WhatsApp Channel';
+          const message = (settings.popup_notification_message || "").replace(/Sarkari\s*Sewayojan/gi, "Tejal Siksha Vibhag") || 'Get real-time job alerts and results delivered directly to your mobile phone!';
           const btnText = settings.popup_notification_btn_text || 'Join Channel';
           const url = settings.popup_notification_url || '';
           const type = (settings.popup_notification_type || 'whatsapp') as 'whatsapp' | 'telegram' | 'general';
@@ -107,7 +107,7 @@ export default function NotificationPopup() {
 
   const handleActionClick = () => {
     if (config) {
-      const uniqueKey = `${config.title}_${config.message}`;
+      const uniqueKey = `${String(config.title || "").replace(/Sarkari\s*Sewayojan/gi, "Tejal Siksha Vibhag")}_${String(config.message || "").replace(/Sarkari\s*Sewayojan/gi, "Tejal Siksha Vibhag")}`;
       // Only persist dismissal permanently if they actually click the action button
       localStorage.setItem('dismissed_notification_content', uniqueKey);
     }
@@ -174,10 +174,10 @@ export default function NotificationPopup() {
               {/* Text content - large and clear, but tightly packed */}
               <div className="max-w-2xl px-2">
                 <h3 className="text-2xl sm:text-3xl font-extrabold text-slate-900 dark:text-zinc-100 tracking-tight leading-snug">
-                  {config.title}
+                  {String(config.title || "").replace(/Sarkari\s*Sewayojan/gi, "Tejal Siksha Vibhag")}
                 </h3>
                 <p className="mt-1.5 text-base sm:text-lg font-bold text-slate-500 dark:text-zinc-400 leading-relaxed">
-                  {config.message}
+                  {String(config.message || "").replace(/Sarkari\s*Sewayojan/gi, "Tejal Siksha Vibhag")}
                 </p>
               </div>
             </div>
@@ -206,7 +206,7 @@ export default function NotificationPopup() {
               {/* Powered by credit line with very tiny gap */}
               <div className="text-center mt-0.5">
                 <span className="text-xs sm:text-sm font-extrabold text-slate-400 dark:text-zinc-500 tracking-wide select-none">
-                  Powered by - Sarkari Sewayojan
+                  Powered by - Tejal Siksha Vibhag
                 </span>
               </div>
             </div>
@@ -253,14 +253,14 @@ export default function NotificationPopup() {
                   ? "text-xl font-extrabold text-slate-900 dark:text-zinc-100 tracking-tight leading-snug"
                   : "text-sm font-extrabold text-slate-900 dark:text-zinc-100 tracking-tight leading-snug"
               }>
-                {config.title}
+                {String(config.title || "").replace(/Sarkari\s*Sewayojan/gi, "Tejal Siksha Vibhag")}
               </h3>
               <p className={
                 isMobileNormal
                   ? "mt-1 text-[15px] font-semibold text-slate-500 dark:text-zinc-400 leading-normal"
                   : "mt-1 text-xs font-semibold text-slate-500 dark:text-zinc-400 leading-relaxed"
               }>
-                {config.message}
+                {String(config.message || "").replace(/Sarkari\s*Sewayojan/gi, "Tejal Siksha Vibhag")}
               </p>
             </div>
           </div>
@@ -304,7 +304,7 @@ export default function NotificationPopup() {
                 ? "text-[11px] font-bold text-slate-400 dark:text-zinc-500 tracking-wide select-none"
                 : "text-[10px] font-bold text-slate-400 dark:text-zinc-500 tracking-wide select-none"
             }>
-              Powered by - Sarkari Sewayojan
+              Powered by - Tejal Siksha Vibhag
             </span>
           </div>
         </motion.div>

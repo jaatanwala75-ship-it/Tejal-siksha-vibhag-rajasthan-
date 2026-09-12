@@ -193,9 +193,9 @@ const CategoryMore = () => {
       },
       {
         "@type": "CollectionPage",
-        "name": `${categoryName} - Sarkari Result | Sarkari Sewayojan`,
+        "name": `${categoryName} - Sarkari Result | Tejal Siksha Vibhag`,
         "url": `https://tejalsikshavibhag.com/category/${encodeURIComponent(categoryName)}`,
-        "description": `All latest updates, online forms, and Sarkari Result keys for ${categoryName} on Sarkari Sewayojan.`
+        "description": `All latest updates, online forms, and Sarkari Result keys for ${categoryName} on Tejal Siksha Vibhag.`
       }
     ]
   };
@@ -203,8 +203,8 @@ const CategoryMore = () => {
   return (
     <div className="min-h-screen bg-background font-sans overflow-x-hidden">
       <SEO 
-        title={`${categoryName} - Sarkari Result | Sarkari Sewayojan`}
-        description={`All latest updates, online forms, and Sarkari Result keys for ${categoryName} on Sarkari Sewayojan.`}
+        title={`${categoryName} - Sarkari Result | Tejal Siksha Vibhag`}
+        description={`All latest updates, online forms, and Sarkari Result keys for ${categoryName} on Tejal Siksha Vibhag.`}
         keywords={`${categoryName}, ${categoryName} online form, ${categoryName} result, ${categoryName} admit card, sarkari result, sarkari exam, rojgar result, sewayojan`}
         url={`https://tejalsikshavibhag.com/category/${encodeURIComponent(categoryName)}`}
         schema={categorySchema}

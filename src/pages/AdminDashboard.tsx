@@ -571,7 +571,7 @@ const AdminDashboard = () => {
       </AlertDialog>
 
       <div className="bg-background py-4 px-6 flex justify-between items-center" style={{ boxShadow: 'var(--box-shadow-light)' }}>
-        <h1 className="text-2xl font-black text-primary">ADMIN PANEL - Sarkari Sewayojan</h1>
+        <h1 className="text-2xl font-black text-primary">ADMIN PANEL - Tejal Siksha Vibhag</h1>
         <div className="flex gap-3 items-center">
           <ThemeToggle />
           <Button variant="outline" onClick={handleForceRefresh} title="Clear local cache and load fresh data from Firestore database">🔄 Refresh Database Cache</Button>

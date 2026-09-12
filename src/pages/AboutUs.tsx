@@ -60,7 +60,7 @@ export default function AboutUs() {
       <SEO
         title="About Us - Tejal Siksha Vibhag | Official Sarkari Result & Exam Portal"
         description="About Tejal Siksha Vibhag (tejalsikshavibhag.com) - India's most trusted portal for Sarkari Result, Sewayojan UP, Rojgar Result, Admit Cards, Syllabus, and Latest Government Job updates."
-        keywords="about sarkari sewayojan, sarkari result, sarkari exam, sewayojan up, rojgar result, government job updates"
+        keywords="about tejal siksha vibhag, sarkari result, sarkari exam, sewayojan up, rojgar result, government job updates"
         url="https://tejalsikshavibhag.com/about-us"
         schema={aboutSchema}
       />

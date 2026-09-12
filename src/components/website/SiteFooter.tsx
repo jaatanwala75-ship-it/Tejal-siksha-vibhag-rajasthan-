@@ -41,15 +41,17 @@ const SiteFooter = ({ settings = {}, hideDisclaimer = false }: SiteFooterProps) 
   }, [isHomePage]);
 
   const quickLinks = [
-    ...parseFooterSection(settings['footer_quick_links'] || ''),
-    { text: 'Privacy Policy', url: '/privacy-policy' },
+    ...parseFooterSection(settings["footer_quick_links"] || "").filter(
+      item => !/tools/i.test(item.text)
+    ),
+    { text: "Privacy Policy", url: "/privacy-policy" },
   ];
-  const apps = parseFooterSection(settings['footer_apps'] || '');
+  const apps: any[] = [];
   const more = parseFooterSection(settings['footer_more'] || '');
 
   const sections: FooterSection[] = [
     { title: 'Quick Links', items: quickLinks },
-    { title: 'Apps', items: apps },
+    
   ].filter(s => s.items.length > 0);
 
   // "More" section items act as category filters - open in new tab
@@ -60,7 +62,7 @@ const SiteFooter = ({ settings = {}, hideDisclaimer = false }: SiteFooterProps) 
       <div className="mx-auto px-3 mt-8 mb-4">
         {/* Footer Sections */}
         {(sections.length > 0 || moreSection) && (
-          <div className={`grid grid-cols-1 ${sections.length + (moreSection ? 1 : 0) >= 3 ? 'md:grid-cols-3' : sections.length + (moreSection ? 1 : 0) >= 2 ? 'md:grid-cols-2' : ''} gap-4 mb-6`}>
+          <div className={`grid grid-cols-1 ${sections.length + (moreSection ? 1 : 0) >= 3 ? 'md:grid-cols-2' : sections.length + (moreSection ? 1 : 0) >= 2 ? 'md:grid-cols-2' : ''} gap-4 mb-6`}>
             {sections.map(section => (
               <div key={section.title} className="rounded-2xl overflow-hidden" style={{ boxShadow: 'var(--box-shadow-strong)' }}>
                 <h3 className="bg-primary text-primary-foreground text-[20px] font-bold py-2.5 px-4">{section.title}</h3>
@@ -83,7 +85,7 @@ const SiteFooter = ({ settings = {}, hideDisclaimer = false }: SiteFooterProps) 
               <div className="rounded-2xl overflow-hidden" style={{ boxShadow: 'var(--box-shadow-strong)' }}>
                 <h3 className="bg-primary text-primary-foreground text-[20px] font-bold py-2.5 px-4">{moreSection.title}</h3>
                 <div className="bg-background py-2 px-4 theme-box-text">
-                  <div className="grid grid-cols-3 gap-x-4 gap-y-1.5">
+                  <div className="grid grid-cols-2 gap-x-4 gap-y-1.5">
                     {moreSection.items.map((item, i) => (
                       <a
                         key={i}

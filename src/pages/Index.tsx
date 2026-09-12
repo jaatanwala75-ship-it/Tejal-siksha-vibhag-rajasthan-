@@ -206,11 +206,11 @@ const Index = () => {
         "@type": "WebSite",
         "@id": "https://tejalsikshavibhag.com/#website",
         "url": "https://tejalsikshavibhag.com/",
-        "name": "Sarkari Sewayojan",
+        "name": "Tejal Siksha Vibhag",
         "alternateName": [
           "TejalSikshaVibhag",
-          "Sarkari Sewayojan Official",
-          "Sarkari Sewayojan Portal",
+          "Tejal Siksha Vibhag Official",
+          "Tejal Siksha Vibhag Portal",
           "Tejal Siksha Vibhag Portal"
         ],
         "publisher": {
@@ -225,17 +225,17 @@ const Index = () => {
       {
         "@type": "Organization",
         "@id": "https://tejalsikshavibhag.com/#organization",
-        "name": "Sarkari Sewayojan",
+        "name": "Tejal Siksha Vibhag",
         "alternateName": [
           "TejalSikshaVibhag",
-          "Sarkari Sewayojan Team"
+          "Tejal Siksha Vibhag Team"
         ],
         "url": "https://tejalsikshavibhag.com/",
         "logo": {
           "@type": "ImageObject",
           "@id": "https://tejalsikshavibhag.com/#logo",
           "url": settings.logo_url || "https://tejalsikshavibhag.com/logo_icon.png",
-          "caption": "Sarkari Sewayojan"
+          "caption": "Tejal Siksha Vibhag"
         },
         "image": {
           "@id": "https://tejalsikshavibhag.com/#logo"
@@ -245,12 +245,12 @@ const Index = () => {
   };
 
   const pageTitle = activeFilter === 'Home' 
-    ? "Sarkari Sewayojan - Sarkari Result, Sarkari Exam, Sewayojan UP & Rojgar Result 2026"
-    : `${activeFilter} Jobs - Latest Sarkari Result, Sarkari Sewayojan`;
+    ? "Tejal Siksha Vibhag - Sarkari Result, Sarkari Exam, Tejal Siksha UP & Rojgar Result 2026"
+    : `${activeFilter} Jobs - Latest Sarkari Result, Tejal Siksha Vibhag`;
 
   const pageDescription = activeFilter === 'Home'
-    ? "Sarkari Sewayojan is India's No.1 Sarkari Result Portal. Find latest Sarkari Exam, Sewayojan, Rojgar Result, Free Job Alert, Railway, Bank, SSC, and Police Updates."
-    : `Latest Online Form & Sarkari Result for ${activeFilter} Jobs on Sarkari Sewayojan. Stay updated with Sarkari Exam and Rojgar Result notifications.`;
+    ? "Tejal Siksha Vibhag is India's No.1 Sarkari Result Portal. Find latest Sarkari Exam, Tejal Siksha, Rojgar Result, Free Job Alert, Railway, Bank, SSC, and Police Updates."
+    : `Latest Online Form & Sarkari Result for ${activeFilter} Jobs on Tejal Siksha Vibhag. Stay updated with Sarkari Exam and Rojgar Result notifications.`;
 
   return (
     <div className="min-h-screen bg-background overflow-x-hidden font-sans">
@@ -309,7 +309,7 @@ const Index = () => {
             {/* Title & Core Platform Statement */}
             <h2 className="text-[17px] md:text-[20px] leading-relaxed text-slate-800 dark:text-slate-100 mb-1 font-normal">
               <strong className="font-extrabold text-[#0b3d91] dark:text-sky-400 theme-box-text">
-                (Sarkari Sewayojan website since 2022) Trusted Platform for Government Job Updates
+                (Tejal Siksha Vibhag website since 2022) Trusted Platform for Government Job Updates
               </strong>{" "}
               – Latest Government Job Updates, Online Forms, Results, Admit Cards, Answer Keys, Syllabus & More.
             </h2>
@@ -322,7 +322,7 @@ const Index = () => {
             {/* Crucial Disclaimer Alert Block */}
             <div className="mb-1.5 max-w-4xl mx-auto">
               <p className="inline-block px-3 py-1 bg-rose-500/10 dark:bg-rose-500/5 text-rose-600 dark:text-rose-400 text-[11px] md:text-[12px] rounded-lg border border-rose-500/25 font-bold leading-normal">
-                Sarkari Sewayojan is a private website and not affiliated with any government organization.
+                Tejal Siksha Vibhag is a private website and not affiliated with any government organization.
               </p>
             </div>
 

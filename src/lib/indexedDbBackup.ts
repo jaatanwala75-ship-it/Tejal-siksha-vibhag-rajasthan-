@@ -1,5 +1,5 @@
 /**
- * Super-resilient Client-Side IndexedDB Data Vault for Sarkari Sewayojan
+ * Super-resilient Client-Side IndexedDB Data Vault for Tejal Siksha Vibhag
  * Allows storing full-size database backups directly in browser storage (up to hundreds of MBs)
  */
 
